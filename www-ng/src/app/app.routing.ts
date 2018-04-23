@@ -51,36 +51,24 @@ export const routes: Routes = [
     },
     children: [
       {
-        path: 'base',
+        path: 'calendar',
         loadChildren: './views/base/base.module#BaseModule'
       },
       {
-        path: 'buttons',
+        path: 'rooms',
         loadChildren: './views/buttons/buttons.module#ButtonsModule'
       },
       {
-        path: 'charts',
+        path: 'account',
         loadChildren: './views/chartjs/chartjs.module#ChartJSModule'
       },
       {
-        path: 'dashboard',
+        path: 'reports',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
       },
       {
-        path: 'icons',
+        path: 'devices',
         loadChildren: './views/icons/icons.module#IconsModule'
-      },
-      {
-        path: 'notifications',
-        loadChildren: './views/notifications/notifications.module#NotificationsModule'
-      },
-      {
-        path: 'theme',
-        loadChildren: './views/theme/theme.module#ThemeModule'
-      },
-      {
-        path: 'widgets',
-        loadChildren: './views/widgets/widgets.module#WidgetsModule'
       }
     ]
   }
